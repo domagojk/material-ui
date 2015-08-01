@@ -37,7 +37,7 @@ let AppBar = React.createClass({
   },
 
   componentDidMount() {
-    if (process && process.env.NODE_ENV !== 'production') {
+    //if (process.env.NODE_ENV !== 'production') {
       if (this.props.iconElementLeft && this.props.iconClassNameLeft) {
         console.warn(
           'Properties iconClassNameLeft and iconElementLeft cannot be simultaneously ' +
@@ -51,7 +51,7 @@ let AppBar = React.createClass({
           'defined. Please use one or the other.'
         );
       }
-    }
+    //}
   },
 
   getStyles() {
