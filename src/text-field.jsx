@@ -323,7 +323,7 @@ let TextField = React.createClass({
   },
 
   setErrorText(newErrorText) {
-    if (process.env.NODE_ENV !== 'production' && this.props.hasOwnProperty('errorText')) {
+    if (process && process.env.NODE_ENV !== 'production' && this.props.hasOwnProperty('errorText')) {
       console.error('Cannot call TextField.setErrorText when errorText is defined as a property.');
     }
     else if (this.isMounted()) {
@@ -332,7 +332,7 @@ let TextField = React.createClass({
   },
 
   setValue(newValue) {
-    if (process.env.NODE_ENV !== 'production' && this._isControlled()) {
+    if (process && process.env.NODE_ENV !== 'production' && this._isControlled()) {
       console.error('Cannot call TextField.setValue when value or valueLink is defined as a property.');
     }
     else if (this.isMounted()) {
