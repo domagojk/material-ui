@@ -1,5 +1,5 @@
 let React = require('react');
-let Styles = require('../styles');
+let Styles = require('../styles/index');
 let Avatar = require('../avatar');
 let StylePropable = require('../mixins/style-propable');
 
