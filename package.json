@@ -1,9 +1,9 @@
 {
   "name": "material-ui",
   "author": "Call-em-all Engineering Team",
-  "version": "0.10.99",
+  "version": "0.10.22",
   "description": "Material Design UI components built with React",
-  "main": "./lib",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"No test implemented\" && exit 0",
     "prebuild": "rm -rf lib",
