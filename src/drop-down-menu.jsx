@@ -154,7 +154,7 @@ let DropDownMenu = React.createClass({
   render() {
     let _this = this;
     let styles = this.getStyles();
-    let selectedIndex = this.state.selectedIndex;
+    let selectedIndex = this.props.selectedIndex; //this.state.selectedIndex;
     let displayValue = "";
     if (selectedIndex) {
       //if (process.env.NODE_ENV !== 'production') {
