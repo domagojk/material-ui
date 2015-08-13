@@ -278,7 +278,9 @@ let DropDownMenu = React.createClass({
   },
 
   _onMenuItemClick(e, key, payload) {
-    if (this.props.onChange && this.state.selectedIndex !== key) {
+    // removed extra condition this.state.selectedIndex !== key 
+    //  Now will trigger action even if same item is clicked
+    if (this.props.onChange) { 
       let selectedItem = this.props.menuItems[key];
       if (selectedItem) {
         e.target.value = selectedItem[this.props.valueMember];
