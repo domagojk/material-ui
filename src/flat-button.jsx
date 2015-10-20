@@ -113,6 +113,7 @@ let FlatButton = React.createClass({
     return (
       <EnhancedButton
         {...other}
+        ref='enhanced-button'
         disabled={disabled}
         focusRippleColor={buttonRippleColor}
         onKeyboardFocus={this._handleKeyboardFocus}
