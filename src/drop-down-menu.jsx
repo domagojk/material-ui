@@ -263,7 +263,7 @@ let DropDownMenu = React.createClass({
         }
         else {
           this._selectNextItem();
-        } 
+        }
         break;
       case KeyCode.ENTER:
       case KeyCode.SPACE:
