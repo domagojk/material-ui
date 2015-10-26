@@ -259,13 +259,11 @@ let DropDownMenu = React.createClass({
         break;
       case KeyCode.DOWN:
         if (!this.state.open) {
-          if (e.altKey) {
-            this.setState({open:true});
-          }
-          else {
-            this._selectNextItem();
-          }
+          this.setState({ open: true });
         }
+        else {
+          this._selectNextItem();
+        } 
         break;
       case KeyCode.ENTER:
       case KeyCode.SPACE:

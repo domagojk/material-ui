@@ -146,6 +146,10 @@ let MenuItem = React.createClass({
       toggleElement = <Toggle {...other} onToggle={this._handleToggle} style={styles.toggle}/>;
     }
 
+    if(this.props.active) {
+      this.props.className = this.props.className? this.props.className + ' active': 'active';
+    }
+
     return (
       <div
         key={this.props.index}
